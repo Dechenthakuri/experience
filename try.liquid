@@ -1,0 +1,38 @@
+<div style="width: 1439px; height: 962px; position: relative; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    {% if section.settings.image1 != blank -%}
+        {{- section.settings.image1 | image_url:  | image_tag: class: '', loading: 'lazy' -}}
+    {%- endif %}
+    <div style="width: 566px; height: 376.54px; position: relative">
+        <div style="width: 398.68px; height: 166.37px; left: 98.47px; top: 0px; position: absolute; text-align: center">
+            <span style="color: black; font-size: 63px; font-family: Alumni Sans; font-weight: 800; text-transform: uppercase; line-height: 98.28px; letter-spacing: 1.26px; word-wrap: break-word"
+                >ABOUT<br></span
+            ><span style="color: black; font-size: 20px; font-family: Alumni Sans; font-weight: 800; line-height: 31.20px; word-wrap: break-word"
+                >Subheader</span
+            >
+        </div>
+        <div style="width: 566px; height: 182.54px; left: 0px; top: 194px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Actor; font-weight: 400; line-height: 23.40px; word-wrap: break-word">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "try",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image 1"
+        }
+    ],
+    "presets": [
+        {
+            "name": "try"
+        }
+    ]
+}
+{% endschema %}
